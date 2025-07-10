@@ -19,10 +19,15 @@ class CheckResponseBodyAndExtract extends Simulation{
   .exec(http("Get all video games")
   .get("/videogame")
   .check(jsonPath(path = "$[1].id").saveAs( key= "gameId")))
+    // add some print lines to see whats going on
+    .exec { session => println(session); session}
 
     .exec(http("Get specific game")
     .get("/videogame/#{gameId}")
-    .check(jsonPath(path="$.name").is("Gran Turismo 3")))
+    .check(jsonPath(path="$.name").is("Gran Turismo 3"))
+    // lets get the response body and see what it looks like
+    .check(bodyString.saveAs(key="responseBody")))
+    .exec {session => println(session("responseBody").as[String]); session}
 
   // 3 Load Scenario
   setUp(
