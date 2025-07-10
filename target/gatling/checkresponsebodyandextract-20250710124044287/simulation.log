@@ -1,0 +1,4 @@
+RUN	videogamedb.scriptfundamentals.CheckResponseBodyAndExtract	checkresponsebodyandextract	1752151244287	test	3.8.2
+USER	Check with JSON Path	START	1752151244769
+REQUEST		Get specific game	1752151244767	1752151244822	KO	jsonPath($.name).find.is(Resident Evil 5), but actually found Resident Evil 4
+USER	Check with JSON Path	END	1752151244879
