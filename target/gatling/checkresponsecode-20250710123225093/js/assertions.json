@@ -1,0 +1,10 @@
+{
+  "simulation": "videogamedb.scriptfundamentals.CheckResponseCode",
+  "simulationId": "checkresponsecode-20250710123225093",
+  "start": 1752150745572,
+  "description": "test",
+  "scenarios": ["Video Game DB - 3 calls"],
+  "assertions": [
+
+  ]
+}

@@ -1,0 +1,6 @@
+RUN	videogamedb.scriptfundamentals.CheckResponseCode	checkresponsecode	1752150790752	test	3.8.2
+USER	Video Game DB - 3 calls	START	1752150791137
+REQUEST		1st call - Get all Video Games	1752150791135	1752150791191	KO	status.find.is(404), but actually found 200
+REQUEST		2nd call - Get Specific Game	1752150796199	1752150796268	OK	 
+REQUEST		3rd call - Get all Video Games	1752150800699	1752150800730	OK	 
+USER	Video Game DB - 3 calls	END	1752150800747
