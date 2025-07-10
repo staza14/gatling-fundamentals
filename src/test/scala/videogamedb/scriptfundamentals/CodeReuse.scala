@@ -10,15 +10,22 @@ class CodeReuse extends Simulation {
   // create some reusable methods
 
   def getAllVideoGames() = {
-    exec(http(requestName = "Get all video games")
-    .get("/videogame")
-    .check(status.is(expected = 200)))
+    // if we want this to repeat a number of times we can add a reuse block
+    repeat(times = 3) {
+      exec(http(requestName = "Get all video games")
+        .get("/videogame")
+        .check(status.is(expected = 200)))
+    }
   }
 
   def getSpecificGame() = {
-    exec(http(requestName = "Get specific game")
-      .get("/videogame/1")
-      .check(status.in(expected = 200 to 210)))
+    // we can add another variable to repeat, a counter name
+    repeat(times = 5, counterName = "counter") {
+      // we can use this counter in here
+      exec(http(requestName = "Get specific game with id: #{counter}")
+        .get("/videogame/#{counter}")
+        .check(status.in(expected = 200 to 210)))
+    }
   }
 
   // 2 Scenario Definition
@@ -27,7 +34,11 @@ class CodeReuse extends Simulation {
     .pause(duration = 5)
     .exec(getSpecificGame())
     .pause(duration = 5)
-    .exec(getAllVideoGames())
+    // could also add repeat block here this way:
+    .repeat(times = 2) {
+      getAllVideoGames()
+    }
+
   // 3 Load Scenario
   setUp(
     scn.inject(atOnceUsers(users = 1))
