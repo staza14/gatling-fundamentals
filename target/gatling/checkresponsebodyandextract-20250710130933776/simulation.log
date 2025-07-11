@@ -1,6 +1,0 @@
-RUN	videogamedb.scriptfundamentals.CheckResponseBodyAndExtract	checkresponsebodyandextract	1752152973776	test	3.8.2
-USER	Check with JSON Path	START	1752152974282
-REQUEST		Get specific game	1752152974280	1752152974532	OK	 
-REQUEST		Get all video games	1752152974620	1752152974981	OK	 
-REQUEST		Get specific game	1752152974994	1752152975023	OK	 
-USER	Check with JSON Path	END	1752152975028

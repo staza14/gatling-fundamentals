@@ -1,3 +1,0 @@
-RUN	videogamedb.feeders.CsvFeeder	csvfeeder	1752156794624	test	3.8.2
-USER	CSV feeder test	START	1752156795066
-USER	CSV feeder test	END	1752156805111

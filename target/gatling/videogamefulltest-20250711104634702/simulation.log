@@ -1,0 +1,72 @@
+RUN	videogamedb.finalsimulation.VideoGameFullTest	videogamefulltest	1752230794702	test	3.8.2
+USER	Video Game Full Test	START	1752230800139
+REQUEST		Get all video games	1752230800135	1752230800200	OK	 
+USER	Video Game Full Test	START	1752230802106
+REQUEST		Get all video games	1752230802105	1752230802181	OK	 
+REQUEST		Authenticate	1752230802215	1752230802242	OK	 
+USER	Video Game Full Test	START	1752230804107
+REQUEST		Get all video games	1752230804105	1752230804166	OK	 
+REQUEST		Authenticate	1752230804183	1752230804208	OK	 
+REQUEST		Create New Game - Super Mario 64	1752230804309	1752230804334	OK	 
+USER	Video Game Full Test	START	1752230806107
+REQUEST		Get all video games	1752230806106	1752230806168	OK	 
+REQUEST		Authenticate	1752230806170	1752230806195	OK	 
+REQUEST		Create New Game - Resident Evil 4	1752230806213	1752230806237	OK	 
+REQUEST		Get single game - Super Mario 64	1752230806342	1752230806367	KO	jsonPath($.gameName).find.is(Super Mario 64), but actually found nothing
+USER	Video Game Full Test	START	1752230808108
+REQUEST		Get all video games	1752230808107	1752230808170	OK	 
+REQUEST		Authenticate	1752230808171	1752230808194	OK	 
+REQUEST		Create New Game - Tetris	1752230808199	1752230808226	OK	 
+REQUEST		Get single game - Resident Evil 4	1752230808240	1752230808263	KO	jsonPath($.gameName).find.is(Resident Evil 4), but actually found nothing
+REQUEST		Delete game - Super Mario 64	1752230808375	1752230808406	OK	 
+REQUEST		Get all video games	1752230808409	1752230808433	OK	 
+REQUEST		Authenticate	1752230810173	1752230810203	OK	 
+REQUEST		Create New Game - Tetris	1752230810198	1752230810229	OK	 
+REQUEST		Get single game - Tetris	1752230810228	1752230810253	KO	jsonPath($.gameName).find.is(Tetris), but actually found nothing
+REQUEST		Delete game - Resident Evil 4	1752230810266	1752230810298	OK	 
+REQUEST		Get all video games	1752230810299	1752230810322	OK	 
+REQUEST		Authenticate	1752230810437	1752230810468	OK	 
+REQUEST		Create New Game - Tetris	1752230812206	1752230812227	OK	 
+REQUEST		Get single game - Tetris	1752230812232	1752230812251	KO	jsonPath($.gameName).find.is(Tetris), but actually found nothing
+REQUEST		Delete game - Tetris	1752230812256	1752230812285	OK	 
+REQUEST		Get all video games	1752230812285	1752230812305	OK	 
+REQUEST		Authenticate	1752230812325	1752230812350	OK	 
+REQUEST		Create New Game - Super Mario 64	1752230812472	1752230812500	OK	 
+REQUEST		Get single game - Tetris	1752230814230	1752230814257	KO	jsonPath($.gameName).find.is(Tetris), but actually found nothing
+REQUEST		Delete game - Tetris	1752230814253	1752230814281	OK	 
+REQUEST		Get all video games	1752230814283	1752230814303	OK	 
+REQUEST		Authenticate	1752230814308	1752230814329	OK	 
+REQUEST		Create New Game - Tetris	1752230814354	1752230814377	OK	 
+REQUEST		Get single game - Super Mario 64	1752230814503	1752230814524	KO	jsonPath($.gameName).find.is(Super Mario 64), but actually found nothing
+REQUEST		Delete game - Tetris	1752230816261	1752230816296	OK	 
+REQUEST		Get all video games	1752230816297	1752230816328	OK	 
+REQUEST		Authenticate	1752230816306	1752230816338	OK	 
+REQUEST		Create New Game - Super Mario 64	1752230816333	1752230816361	OK	 
+REQUEST		Get single game - Tetris	1752230816380	1752230816402	KO	jsonPath($.gameName).find.is(Tetris), but actually found nothing
+REQUEST		Delete game - Super Mario 64	1752230816528	1752230816552	OK	 
+REQUEST		Get all video games	1752230816554	1752230816583	OK	 
+REQUEST		Create New Game - Tetris	1752230818341	1752230818370	OK	 
+REQUEST		Authenticate	1752230818331	1752230818377	OK	 
+REQUEST		Get single game - Super Mario 64	1752230818363	1752230818391	KO	jsonPath($.gameName).find.is(Super Mario 64), but actually found nothing
+REQUEST		Delete game - Tetris	1752230818405	1752230818429	OK	 
+REQUEST		Get all video games	1752230818430	1752230818457	OK	 
+REQUEST		Authenticate	1752230818586	1752230818616	OK	 
+REQUEST		Get single game - Tetris	1752230820373	1752230820408	KO	jsonPath($.gameName).find.is(Tetris), but actually found nothing
+REQUEST		Create New Game - Tetris	1752230820381	1752230820411	OK	 
+REQUEST		Delete game - Super Mario 64	1752230820394	1752230820423	OK	 
+REQUEST		Get all video games	1752230820424	1752230820444	OK	 
+REQUEST		Authenticate	1752230820459	1752230820481	OK	 
+REQUEST		Create New Game - Gran Turismo 3	1752230820620	1752230820648	OK	 
+REQUEST		Delete game - Tetris	1752230822413	1752230822445	OK	 
+REQUEST		Get single game - Tetris	1752230822413	1752230822445	KO	jsonPath($.gameName).find.is(Tetris), but actually found nothing
+REQUEST		Get all video games	1752230822447	1752230822472	OK	 
+REQUEST		Authenticate	1752230822447	1752230822473	OK	 
+REQUEST		Create New Game - Super Mario 64	1752230822484	1752230822506	OK	 
+REQUEST		Get single game - Gran Turismo 3	1752230822651	1752230822670	KO	jsonPath($.gameName).find.is(Gran Turismo 3), but actually found nothing
+REQUEST		Delete game - Tetris	1752230824450	1752230824477	OK	 
+REQUEST		Get all video games	1752230824478	1752230824500	OK	 
+REQUEST		Authenticate	1752230824474	1752230824501	OK	 
+REQUEST		Create New Game - Gran Turismo 3	1752230824477	1752230824511	OK	 
+REQUEST		Get single game - Super Mario 64	1752230824508	1752230824529	KO	jsonPath($.gameName).find.is(Super Mario 64), but actually found nothing
+REQUEST		Delete game - Gran Turismo 3	1752230824674	1752230824698	OK	 
+REQUEST		Get all video games	1752230824699	1752230824721	OK	 

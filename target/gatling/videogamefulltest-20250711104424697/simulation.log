@@ -1,0 +1,72 @@
+RUN	videogamedb.finalsimulation.VideoGameFullTest	videogamefulltest	1752230664697	test	3.8.2
+USER	Video Game Full Test	START	1752230670083
+REQUEST		Get all video games	1752230670080	1752230670137	OK	 
+USER	Video Game Full Test	START	1752230672062
+REQUEST		Get all video games	1752230672061	1752230672124	OK	 
+REQUEST		Authenticate	1752230672150	1752230672180	OK	 
+USER	Video Game Full Test	START	1752230674063
+REQUEST		Get all video games	1752230674061	1752230674130	OK	 
+REQUEST		Authenticate	1752230674129	1752230674156	OK	 
+ERROR	Create New Game - Resident Evil 4: Failed to build request: No attribute named 'name' is defined 	1752230674272
+USER	Video Game Full Test	START	1752230676064
+REQUEST		Get all video games	1752230676062	1752230676128	OK	 
+REQUEST		Authenticate	1752230676132	1752230676161	OK	 
+ERROR	Create New Game - Resident Evil 4: Failed to build request: No attribute named 'name' is defined 	1752230676165
+REQUEST		Get single game - Resident Evil 4	1752230676285	1752230676327	KO	jsonPath($.gameName).find.is(Resident Evil 4), but actually found nothing
+USER	Video Game Full Test	START	1752230678064
+REQUEST		Get all video games	1752230678063	1752230678131	OK	 
+ERROR	Create New Game - Super Mario 64: Failed to build request: No attribute named 'name' is defined 	1752230678165
+REQUEST		Authenticate	1752230678132	1752230678170	OK	 
+REQUEST		Get single game - Resident Evil 4	1752230678168	1752230678190	KO	jsonPath($.gameName).find.is(Resident Evil 4), but actually found nothing
+REQUEST		Delete game - Resident Evil 4	1752230678335	1752230678374	OK	 
+REQUEST		Get all video games	1752230678380	1752230678414	OK	 
+REQUEST		Authenticate	1752230680134	1752230680161	OK	 
+ERROR	Create New Game - Gran Turismo 3: Failed to build request: No attribute named 'name' is defined 	1752230680173
+REQUEST		Get single game - Super Mario 64	1752230680168	1752230680191	KO	jsonPath($.gameName).find.is(Super Mario 64), but actually found nothing
+REQUEST		Delete game - Resident Evil 4	1752230680195	1752230680220	OK	 
+REQUEST		Get all video games	1752230680222	1752230680252	OK	 
+REQUEST		Authenticate	1752230680418	1752230680444	OK	 
+ERROR	Create New Game - Gran Turismo 3: Failed to build request: No attribute named 'name' is defined 	1752230682165
+REQUEST		Get single game - Gran Turismo 3	1752230682176	1752230682204	KO	jsonPath($.gameName).find.is(Gran Turismo 3), but actually found nothing
+REQUEST		Delete game - Super Mario 64	1752230682195	1752230682222	OK	 
+REQUEST		Get all video games	1752230682224	1752230682246	OK	 
+REQUEST		Authenticate	1752230682255	1752230682279	OK	 
+ERROR	Create New Game - Tetris: Failed to build request: No attribute named 'name' is defined 	1752230682449
+REQUEST		Get single game - Gran Turismo 3	1752230684168	1752230684190	KO	jsonPath($.gameName).find.is(Gran Turismo 3), but actually found nothing
+REQUEST		Delete game - Gran Turismo 3	1752230684207	1752230684232	OK	 
+REQUEST		Get all video games	1752230684234	1752230684260	OK	 
+REQUEST		Authenticate	1752230684248	1752230684271	OK	 
+ERROR	Create New Game - Tetris: Failed to build request: No attribute named 'name' is defined 	1752230684283
+REQUEST		Get single game - Tetris	1752230684452	1752230684479	KO	jsonPath($.gameName).find.is(Tetris), but actually found nothing
+REQUEST		Delete game - Gran Turismo 3	1752230686195	1752230686234	OK	 
+REQUEST		Get all video games	1752230686236	1752230686265	OK	 
+ERROR	Create New Game - Resident Evil 4: Failed to build request: No attribute named 'name' is defined 	1752230686274
+REQUEST		Authenticate	1752230686264	1752230686289	OK	 
+REQUEST		Get single game - Tetris	1752230686285	1752230686309	KO	jsonPath($.gameName).find.is(Tetris), but actually found nothing
+REQUEST		Delete game - Tetris	1752230686485	1752230686512	OK	 
+REQUEST		Get all video games	1752230686513	1752230686540	OK	 
+ERROR	Create New Game - Super Mario 64: Failed to build request: No attribute named 'name' is defined 	1752230688293
+REQUEST		Authenticate	1752230688268	1752230688296	OK	 
+REQUEST		Get single game - Resident Evil 4	1752230688277	1752230688297	KO	jsonPath($.gameName).find.is(Resident Evil 4), but actually found nothing
+REQUEST		Delete game - Tetris	1752230688313	1752230688338	OK	 
+REQUEST		Get all video games	1752230688339	1752230688364	OK	 
+REQUEST		Authenticate	1752230688543	1752230688563	OK	 
+ERROR	Create New Game - Resident Evil 4: Failed to build request: No attribute named 'name' is defined 	1752230690309
+REQUEST		Get single game - Super Mario 64	1752230690297	1752230690325	KO	jsonPath($.gameName).find.is(Super Mario 64), but actually found nothing
+REQUEST		Delete game - Resident Evil 4	1752230690300	1752230690331	OK	 
+REQUEST		Get all video games	1752230690332	1752230690355	OK	 
+REQUEST		Authenticate	1752230690366	1752230690390	OK	 
+ERROR	Create New Game - Gran Turismo 3: Failed to build request: No attribute named 'name' is defined 	1752230690568
+REQUEST		Get single game - Resident Evil 4	1752230692313	1752230692345	KO	jsonPath($.gameName).find.is(Resident Evil 4), but actually found nothing
+REQUEST		Delete game - Super Mario 64	1752230692328	1752230692363	OK	 
+REQUEST		Authenticate	1752230692357	1752230692385	OK	 
+REQUEST		Get all video games	1752230692364	1752230692389	OK	 
+ERROR	Create New Game - Gran Turismo 3: Failed to build request: No attribute named 'name' is defined 	1752230692392
+REQUEST		Get single game - Gran Turismo 3	1752230692571	1752230692594	KO	jsonPath($.gameName).find.is(Gran Turismo 3), but actually found nothing
+REQUEST		Delete game - Resident Evil 4	1752230694349	1752230694385	OK	 
+ERROR	Create New Game - Super Mario 64: Failed to build request: No attribute named 'name' is defined 	1752230694388
+REQUEST		Get all video games	1752230694386	1752230694411	OK	 
+REQUEST		Authenticate	1752230694391	1752230694421	OK	 
+REQUEST		Get single game - Gran Turismo 3	1752230694394	1752230694431	KO	jsonPath($.gameName).find.is(Gran Turismo 3), but actually found nothing
+REQUEST		Delete game - Gran Turismo 3	1752230694598	1752230694622	OK	 
+REQUEST		Get all video games	1752230694625	1752230694652	OK	 

@@ -1,4 +1,0 @@
-RUN	videogamedb.scriptfundamentals.Authenticate	authenticate	1752155276050	test	3.8.2
-USER	Authenticate	START	1752155276524
-REQUEST		Create new game	1752155276522	1752155276952	KO	status.find.in([200, 209], 304), found 403
-USER	Authenticate	END	1752155276968

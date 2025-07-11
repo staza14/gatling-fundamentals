@@ -1,6 +1,0 @@
-RUN	videogamedb.scriptfundamentals.CheckResponseCode	checkresponsecode	1752150745093	test	3.8.2
-USER	Video Game DB - 3 calls	START	1752150745574
-REQUEST		1st call - Get all Video Games	1752150745572	1752150745631	OK	 
-REQUEST		2nd call - Get Specific Game	1752150750635	1752150750717	OK	 
-REQUEST		3rd call - Get all Video Games	1752150758203	1752150758260	OK	 
-USER	Video Game DB - 3 calls	END	1752150758272

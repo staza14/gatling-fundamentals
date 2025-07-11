@@ -1,0 +1,13 @@
+RUN	videogamedb.finalsimulation.VideoGameFullTest	videogamefulltest	1752230923548	test	3.8.2
+USER	Video Game Full Test	START	1752230929024
+USER	Video Game Full Test	START	1752230930998
+USER	Video Game Full Test	START	1752230932994
+USER	Video Game Full Test	START	1752230934995
+USER	Video Game Full Test	START	1752230936995
+REQUEST		Get all video games	1752230930996	1752230946509	KO	status.find.is(200), but actually found 502
+REQUEST		Get all video games	1752230932993	1752230948421	KO	status.find.is(200), but actually found 503
+REQUEST		Get all video games	1752230934994	1752230950493	KO	status.find.is(200), but actually found 502
+REQUEST		Get all video games	1752230936994	1752230952265	KO	status.find.is(200), but actually found 502
+REQUEST		Authenticate	1752230948531	1752230953496	OK	 
+REQUEST		Authenticate	1752230952496	1752230953496	OK	 
+REQUEST		Get all video games	1752230929020	1752230953903	KO	status.find.is(200), but actually found 502
